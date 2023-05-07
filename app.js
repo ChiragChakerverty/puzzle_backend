@@ -28,7 +28,7 @@ scoreboard = require("./routes/scoreboard");
 
 //PORT ENVIRONMENT VARIABLE  MONGODB Connect
 const port = process.env.PORT;
-const CONNECTION_URL = process.env.MONGODB_URL;
+const CONNECTION_URL = "mongodb+srv://puzzle:puzzlepass@cluster0.trlnfn0.mongodb.net/?retryWrites=true&w=majority";
 console.log(CONNECTION_URL);
 mongoose
   .connect(CONNECTION_URL)
